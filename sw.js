@@ -1,13 +1,7 @@
 
-/**
- * ServiceWorkerの処理
- * -----------------------------------------------------------------------------
- * 以下参考にしてキャッシュとかのインストール処理を書くといいです。
- * https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
- * 以下コードはほぼコピーです。
- */
+// ServiceWorker処理：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
 
- // キャッシュ名とキャッシュファイルの指定
+// キャッシュ名とキャッシュファイルの指定
 let CACHE_NAME = 'pwa-sample-caches';
 let urlsToCache = [
 	'/pwa/',

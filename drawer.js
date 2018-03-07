@@ -1,21 +1,7 @@
 
 /**
- * ServiceWorkerの登録
- * -------------------
- * [参考] https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
- */
-if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('sw.js').then(function(registration) {
-		console.log('ServiceWorker registration successful with scope: ', registration.scope);
-	}).catch(function(err) {
-		console.log('ServiceWorker registration failed: ', err);
-	});
-}
-
-
-/**
- * 画面タッチで線書くだけの簡単なアプリです
- * ----------------------------------------
+ * 画面タッチでカラフルな線を描く
+ * ------------------------------
  */
 var drawing = false
 var last_x = null
