@@ -10,9 +10,9 @@
  // キャッシュ名とキャッシュファイルの指定
 let CACHE_NAME = 'pwa-sample-caches';
 let urlsToCache = [
-	// '/',
-	// '/css/style.css',
-	// '/main.js'
+	'/pwa/',
+	'/pwa/css/style.css',
+	'/pwa/main.js'
 ];
 
 // インストール処理
