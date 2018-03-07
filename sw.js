@@ -2,8 +2,8 @@
 // ServiceWorker処理：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
 
 // キャッシュ名とキャッシュファイルの指定
-let CACHE_NAME = 'pwa-sample-caches';
-let urlsToCache = [
+var CACHE_NAME = 'pwa-sample-caches';
+var urlsToCache = [
 	'/pwa/',
 	'/pwa/css/style.css',
 	'/pwa/main.js'
