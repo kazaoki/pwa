@@ -6,19 +6,19 @@ var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
 	'/pwa/',
 	'/pwa/css/style.css',
-	'/pwa/main.js'
+	'/pwa/drawer.js'
 ];
 
-// // インストール処理
-// self.addEventListener('install', function(event) {
-// 	event.waitUntil(
-// 		caches
-// 			.open(CACHE_NAME)
-// 			.then(function(cache) {
-// 				return cache.addAll(urlsToCache);
-// 			})
-// 	);
-// });
+// インストール処理
+self.addEventListener('install', function(event) {
+	event.waitUntil(
+		caches
+			.open(CACHE_NAME)
+			.then(function(cache) {
+				return cache.addAll(urlsToCache);
+			})
+	);
+});
 
 // リソースフェッチ時のキャッシュロード処理
 self.addEventListener('fetch', function(event) {
